@@ -3,10 +3,23 @@ module.exports = {
   content: [
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
-    "./resources/**/*.vue"
+    "./resources/**/*.vue",
+    "./node_modules/flowbite/**/*.js",
   ],
   theme: {
     extend: {
+        fontFamily: {
+            'circular-book': ['CircularStd-Book', 'sans-serif'],
+            'circular-book-italic': ['CircularStd-BookItalic', 'sans-serif'],
+            'circular-medium': ['CircularStd-Medium', 'sans-serif'],
+            'circular-medium-italic': ['CircularStd-MediumItalic', 'sans-serif'],
+            'circular-bold': ['CircularStd-Bold', 'sans-serif'],
+            'circular-bold-italic': ['CircularStd-BoldItalic', 'sans-serif'],
+            'circular-light': ['CircularStd-Light', 'sans-serif'],
+            'circular-light-italic': ['CircularStd-LightItalic', 'sans-serif'],
+            'circular-black': ['CircularStd-Black', 'sans-serif'],
+            'circular-black-italic': ['CircularStd-BlackItalic', 'sans-serif'],
+        },
         boxShadow: {
             DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
             '2sm': '0 25px 50px 3px rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.04)',
@@ -36,7 +49,8 @@ module.exports = {
     darkMode: 'class'
   },
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require('@tailwindcss/forms'),
   ],
 }
 

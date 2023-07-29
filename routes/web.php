@@ -9,9 +9,22 @@ use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\PostController;
 use App\Http\Controllers\ProfileController;
 
+
+
+
+// Routs view
 Route::view('/', 'home')->name('home');
 Route::view('/contact', 'contact')->name('contact');
 Route::view('/about', 'about')->name('about');
+
+// Routs event
+Route::get('/eventos', [EventController::class, 'event'])->name('events');
+Route::group(['prefix' => 'eventos', 'as' => 'eventos.'], function (){
+    Route::get('/', [EventController::class, 'event'])->name('events');
+
+});
+
+
 
 //login
 Route::get('/login', [LoginController::class, 'index'])->name('login');
@@ -29,16 +42,10 @@ Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 // ROUTES POSTS
-Route::get('/blog',[PostController::class, 'index'])->name('posts');
-Route::get('/posts',[PostController::class, 'create'])->name('posts.create');
-Route::post('/posts/create',[PostController::class, 'store'])->name('posts.store');
-Route::get('/posts/{post}/edit',[PostController::class, 'edit'])->name('posts.edit');
-Route::put('/posts/{post}',[PostController::class, 'update'])->name('posts.update');
-Route::delete('/posts/{post}',[PostController::class, 'destroy'])->name('posts.destroy');
-Route::get('/posts/{post}',[PostController::class, 'show'])->name('posts.show');
-
-
-
-
-// ROUTES EVENTS
-Route::get('/events', [EventController::class, 'index'])->name('events');
+Route::get('/blog', [PostController::class, 'index'])->name('posts');
+Route::get('/posts', [PostController::class, 'create'])->name('posts.create');
+Route::post('/posts/create', [PostController::class, 'store'])->name('posts.store');
+Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('posts.edit');
+Route::put('/posts/{post}', [PostController::class, 'update'])->name('posts.update');
+Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('posts.destroy');
+Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
