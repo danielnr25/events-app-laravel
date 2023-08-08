@@ -16,25 +16,31 @@
             document.documentElement.classList.remove('dark')
         }
     </script>
+    @stack('styles')
+    @stack('scripts')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 </head>
 
 <body class="font-sans text-gray-900 antialiased">
-    <nav class="fixed top-0 z-50 w-full bg-gray-50 border-b border-gray-300">
-        @include('components.utils.navbar')
-    </nav>
 
-    <aside id="logo-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-gray-50 border-r border-gray-300 sm:translate-x-0 aria-label=" Sidebar">
-        @include('components.utils.sidebar')
-    </aside>
+    <div class="min-h-screen bg-gray-100">
+            @include('components.utils.navbar')
 
-    <div class="p-6 sm:ml-64 bg-gray-50 min-h-screen">
-        <div class="p-3 bg-white shadow-md rounded-lg mt-16">
-            @yield('content')
+        <div class="flex space-x-4">
+            <!-- Page Heading -->
+            @include('components.utils.sidebar')
+
+            <!-- Page Content -->
+            <main class="flex-1">
+                <div class="max-w-7xl mx-auto py-6 px-4">
+                    {{ $slot }}
+                </div>
+            </main>
         </div>
     </div>
 
 </body>
+
 
 </html>

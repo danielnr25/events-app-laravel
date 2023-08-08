@@ -1,6 +1,6 @@
 <ul class="flex flex-col font-semibold p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
     <li>
-        <a href="{{route('events')}}" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 {{ request()->routeIs('events') ? 'text-sky-600 text-base' : 'text-gray-900' }}">Eventos</a>
+        <a href="{{ route('eventos.event') }}" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 {{ request()->routeIs('eventos.event') ? 'text-sky-600 text-base' : 'text-gray-900'  }}">Eventos</a>
     </li>
     <li>
         <a href="{{route('about')}}" class="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 {{ request()->routeIs('about') ? 'text-sky-600 text-base' : 'text-gray-900' }}">Nosotros</a>
@@ -17,10 +17,10 @@
         <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
             <ul class="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded bg-white border border-gray-900 shadow-neubrutalism-lg shadow-indigo-100 ring-1 ring-black ring-opacity-5 focus:outline-none" aria-labelledby="dropdownLargeButton">
                 <li>
-                    <a href="{{route('posts')}}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white {{ request()->routeIs('posts') ? 'text-sky-600 text-base' : 'text-gray-900' }}">Blogs</a>
+                    <a href="{{route('post')}}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white {{ request()->routeIs('posts') ? 'text-sky-600 text-base' : 'text-gray-900' }}">Blogs</a>
                 </li>
                 <li>
-                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white {{ request()->routeIs('about') ? 'text-sky-600 text-base' : 'text-gray-900' }}">FAQ</a>
+                    <a href="{{ route('faq') }}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white {{ request()->routeIs('faq') ? 'text-sky-600 text-base' : 'text-gray-900' }}">FAQ</a>
                 </li>
             </ul>
         </div>

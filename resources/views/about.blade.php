@@ -7,17 +7,19 @@
                 <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-dark-txt-secondary">Somos la primer empresa de Internet especializada en la organización y promoción de eventos en Perú, ofreciendo información y servicios relacionados con esta importante industria que abarca: bodas, fiestas infantiles, bautizos y primera comunión, baby shower, cumpleaños y aniversarios, etc.</p>
             </div>
             <dl class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                <div class="bg-white shadow-md px-3 py-3 rounded-md">
-                    <dt class="font-semibold text-gray-900 dark:text-dark-txt">Misión</dt>
-                    <dd class="mt-1 text-gray-600 text-justify">Aut illo quae. Ut et harum ea animi natus. Culpa maiores et sed sint et magnam exercitationem quia. Ullam voluptas nihil vitae dicta molestiae et. Aliquid velit porro vero.</dd>
+
+                <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Misión</h5>
+                    <p class="font-circular-light text-gray-700 dark:text-gray-400 text-base">Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.</p>
                 </div>
-                <div class="bg-white shadow-md px-3 py-3 rounded-md">
-                    <dt class="font-semibold text-gray-900 dark:text-dark-txt">Visión</dt>
-                    <dd class="mt-1 text-gray-600 dark:text-dark-txt-secondary text-justify">Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.</dd>
+
+                <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Visión</h5>
+                    <p class="font-circular-light text-gray-700 dark:text-gray-400 text-base">Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.</p>
                 </div>
-                <div class="bg-white shadow-md px-3 py-3 rounded-md">
-                    <dt class="font-semibold text-gray-900 dark:text-dark-txt">Costumbres</dt>
-                    <dd class="mt-1 text-gray-600 dark:text-dark-txt-secondary text-justify">Aut repellendus et officiis dolor possimus. Deserunt velit quasi sunt fuga error labore quia ipsum. Commodi autem voluptatem nam. Quos voluptatem totam.</dd>
+                <div class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Costumbres</h5>
+                    <p class="font-circular-light text-gray-700 dark:text-gray-400 text-base">Mollitia delectus a omnis. Quae velit aliquid. Qui nulla maxime adipisci illo id molestiae. Cumque cum ut minus rerum architecto magnam consequatur. Quia quaerat minima.</p>
                 </div>
             </dl>
         </div>
