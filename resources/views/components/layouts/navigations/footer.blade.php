@@ -1,5 +1,5 @@
 <footer class="bg-gray-900">
-    <div class="py-8 px-4 sm:px-6 lg:py-10 lg:px-10">
+    <div class="py-8 px-4 sm:px-6 lg:py-10 lg:px-28">
         <div class="xl:grid xl:grid-cols-3 xl:gap-8">
             <div class="grid grid-cols-2 gap-8 xl:col-span-2 text-center lg:text-left">
                 <div class="md:grid md:grid-cols-2 md:gap-8">
@@ -8,15 +8,13 @@
                         <ul class="mt-4 space-y-4">
                             <li><a href="#" class="text-base text-gray-400 hover:text-indigo-600">Marketing</a></li>
                             <li><a href="#" class="text-base text-gray-400 hover:text-indigo-600">Ventas</a></li>
-                            <li><a href="#" class="text-base text-gray-400 hover:text-indigo-600">Contacto</a></li>
                         </ul>
                     </div>
                     <div class="mt-12 md:mt-0">
                         <h3 class="text-sm font-circular-medium font-semibold text-gray-200 tracking-widest uppercase">Soporte</h3>
                         <ul class="mt-4 space-y-4">
-                            <li><a href="#" class="text-base text-gray-400 hover:text-indigo-600">Marketing</a></li>
-                            <li><a href="#" class="text-base text-gray-400 hover:text-indigo-600">Ventas</a></li>
-                            <li><a href="#" class="text-base text-gray-400 hover:text-indigo-600">Contacto</a></li>
+                            <li><a href="#" class="text-base text-gray-400 hover:text-indigo-600">Términos de uso</a></li>
+                            <li><a href="{{'contact'}}" class="text-base text-gray-400 hover:text-indigo-600">Contacto</a></li>
                         </ul>
                     </div>
                 </div>
@@ -24,17 +22,15 @@
                     <div>
                         <h3 class="text-sm font-semibold text-gray-200 tracking-widest uppercase">Compañia</h3>
                         <ul class="mt-4 space-y-4">
-                            <li><a href="#" class="text-base text-gray-400 hover:text-indigo-600">Marketing</a></li>
-                            <li><a href="#" class="text-base text-gray-400 hover:text-indigo-600">Ventas</a></li>
-                            <li><a href="#" class="text-base text-gray-400 hover:text-indigo-600">Contacto</a></li>
+                            <li><a href="{{route('eventos.event')}}" class="text-base text-gray-400 hover:text-indigo-600">Eventos</a></li>
+                            <li><a href="{{route('post')}}" class="text-base text-gray-400 hover:text-indigo-600">Blog</a></li>
                         </ul>
                     </div>
                     <div class="mt-12 md:mt-0">
                         <h3 class="text-sm font-circular-medium font-semibold text-gray-200 tracking-widest uppercase">Legal</h3>
                         <ul class="mt-4 space-y-4">
-                            <li><a href="#" class="text-base text-gray-400 hover:text-indigo-600">Marketing</a></li>
-                            <li><a href="#" class="text-base text-gray-400 hover:text-indigo-600">Ventas</a></li>
-                            <li><a href="#" class="text-base text-gray-400 hover:text-indigo-600">Contacto</a></li>
+                            <li><a href="#" class="text-base text-gray-400 hover:text-indigo-600">Política de privacidad</a></li>
+                            <li><a href="#" class="text-base text-gray-400 hover:text-indigo-600">Política de cookies</a></li>
                         </ul>
                     </div>
                 </div>
